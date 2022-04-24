@@ -84,5 +84,68 @@ body {
   color: #333333;
 }
 
+.intro {
+  position: relative;
+  padding: 116px 0 249px;
+  background-image:url("../images/image-1.png"), url("../images/background-image.png");
+  background-repeat: no-repeat;
+  background-size: 710px 696px, cover;
+  background-position: calc(50% + 410px) bottom, top center;
+  background-color: #F3D7B7;
+  background-blend-mode: normal, overlay;
+}
+
+.intro::before {
+  position: absolute;
+  display: block;
+  top: -50px;
+  left: calc(50% - 38px);
+  width: 213px;
+  height: 214px;
+  background-image: url("../images/circle-image.svg");
+  background-size: contain;
+  content: "";
+
+}
+
+.intro__inner {
+  padding-left: 100px;
+  width: 464px;
+  box-sizing: content-box;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.intro__text {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.intro__link {
+  display: inline-block;
+  padding: 16px 24px;
+  height: 51px;
+  background-color: #0A775F;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
 
